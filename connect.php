@@ -1,0 +1,8 @@
+<?php
+
+$host="Lacalhost";
+
+
+
+
+?>

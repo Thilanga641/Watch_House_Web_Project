@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Navbar Start */
+#navbar{
+    background: #2e2e2e;
+}
+
+.navbar-nav{
+    margin-left: 120px;
+}
+.nav-item .nav-link{
+    font-size: 14px;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    margin-left: 30px;
+}
+.nav-item .nav-link:hover{
+    background: #09a5ff;
+    color: white;
+}
+#navbar form button{
+    background: #09a5ff;
+    color: white;
+    border: none;
+}
+/* Navbar End */
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+/* Home Section Start */
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.home{
+    width: 100%;
+    height: 94vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.774),rgba(0, 0, 0, 0.726));
+   
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "Hublot";}
+    10%{content: "Omega";}
+    20%{content: "Patek Philippe";}
+    30%{content: "Audemars Piguet";}
+    40%{content: "TAG Heuer";}
+    50%{content: "Breitling";}
+    60%{content: "Cartier";}
+    70%{content: "Romanson";}
+    80%{content: "Rolex";}
+    90%{content: "Jaeger-LeCoultre";}
+    100%{content: "IWC Schaffhausen";}
+} 
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.home .content a:hover{
+    background: #ffa500;
+    color: white;
+}
+
+.home .content span{
+    color: rgb(15, 187, 255);
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/* Home Section End */
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+/*Product section*/
+
+#watch{
+    margin-top: 2%;
+  }
+  #watch h2{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  #watch .card{
+    transition: .3s;
+  }
+  #watch .card:hover{
+    transform: scale(1.09);
+    z-index: 1;
+    border-color: black;
+    border: 1px solid #ffa500;
+  }
+  #watch .cardnoshow{
+    transition: .3s;
+  }
+  #watch .cardnoshow:hover{
+    transform: scale(1.09);
+    z-index: 1;
+    border-color: black;
+    border: 1px solid #ffa500;
+  }
+  .borderw{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 2px 0;
+    width: 100%;
+    color: white;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+  }
+  .morebtn{
+    margin-top: 5%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  #ldmore{
+    transition: .3s;
+    border-radius: 15px;
+    border: 2px solid black;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  #ldmore:hover{
+    border: 2px solid #ffa500;
+    background-color: rgb(255, 255, 255);
+    color: black;
+  
+  }
+  
+  .cardnoshow{
+    display: none;
+  }
+
+
+
+
+
+
+  /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Section Packages Start */
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #ffa500;
+}
+.Products .card{
+    border-radius: 15px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    
+}
+.Products .card img{
+    border-radius: 15px;
+}
+.Products .card .card-body{
+    background: transparent;
+}
+.Products .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.Products .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: #ffa500;
+}
+.star i{
+    font-size: 15px;
+}
+.Products .card .card-body h6{
+    font-size: 20px;
+}
+.Products .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: #ffa500;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Section Packages End */
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* Section Services Start */
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+/* Section Services End */
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* Section Store Start */
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+.h3{
+    font-weight: 600;
+}
+.card-body{
+    text-align: center;
+}
+/* Section stoe End */
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* About Start */
+.about{
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: #ffa500;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+}
+
+/* About End */
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*review*/
+#custo {
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#custo .card-body {
+    transition: transform 0.3s;
+}
+
+#custo .card-body:hover {
+    transform: scale(1.09);
+    z-index: 1;
+    border-color: black;
+}
+
+@media only screen and (max-width: 768px) {
+    #custo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #custo .card-body:hover {
+        transform: none;
+        border-color: initial;
+    }
+}
+@media only screen and (max-width: 480px) {
+    #custo {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+ #custo .card-body {
+        padding: 10px;
+    }
+}
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* Footer Start */
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #cecece;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: rgb(78, 78, 78);
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+/* Footer End */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
