@@ -16,25 +16,22 @@
     
     <div class="container" id="container">
         <div class="form-container sign-up">
-            <form action="login.php" method="POST">
-                <h1>Create Account</h1>
-                <span>or use your email for registration</span>
-                <input type="text" name="first_name" placeholder="First Name" required>
-                <input type="text" name="last_name" placeholder="Last Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="password" name="password" placeholder="Password" required>
-                <button type="submit" name="action" value="signup">Sign Up</button>
-            </form>
+        <form action="server.php" method="POST">
+            <input type="hidden" name="action" value="register">
+            <input type="text" name="first_name" placeholder="First Name" required>
+             <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+             <button type="submit">Sign Up</button>
+        </form>
         </div>
         <div class="form-container sign-in">
-            <form action="login.php" method="POST">
-                <h1>Sign In</h1>
-                <span>or use your email password</span>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="password" name="password" placeholder="Password" required>
-                <a href="#">Forget Your Password?</a>
-                <button type="submit" name="action" value="signin">Sign In</button>
-            </form>
+        <form action="server.php" method="POST">
+            <input type="hidden" name="action" value="login">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+        </form>
         </div>
 
         <div class="toggle-container">
@@ -45,7 +42,7 @@
                     <button class="hidden" id="login">Sign In</button>
                 </div>
                 <div class="toggle-panel toggle-right">
-                    <h1>Hello, Friend!</h1>
+                    <h1>Hello, Valued Customer !</h1>
                     <p>Register with your personal details to use all of site features</p>
                     <button class="hidden" id="register">Sign Up</button>
                 </div>
