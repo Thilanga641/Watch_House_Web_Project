@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: Login_form.php"); // Redirect to login page if not logged in
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,8 +31,6 @@
 </head>
 
 <body>
-
-  <!-- Navbar Section Start -->
 
   <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
     <div class="container">
@@ -55,7 +61,7 @@
             <a class="nav-link" href="#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="Login_form.html">Sign Out</a>
+            <a class="nav-link" href="logout.php">Sign Out</a>
           </li>
         </ul>
         <form class="d-flex">
