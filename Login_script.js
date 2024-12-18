@@ -9,3 +9,10 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
+
+window.onload = function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('signup') && urlParams.get('signup') === 'success') {
+        alert('Sign-up Successful! Please log in.');
+    }
+};
