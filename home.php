@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['user_id'])) {
-    header("Location: Login_form.php"); // Redirect to login page if not logged in
+    header("Location:index.php"); // Redirect to login page if not logged in
     exit();
 }
 ?>
@@ -15,7 +15,7 @@ if (!isset($_SESSION['user_id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horizon Watch</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
         integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -32,7 +32,27 @@ if (!isset($_SESSION['user_id'])) {
 
 <body>
 
-  <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Navbar Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg sticky-top bg-dark navbar-dark" id="navbar">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="images/logo.png" alt="Logo" width="60" height="30" class="d-inline-block align-text-top">
@@ -61,24 +81,27 @@ if (!isset($_SESSION['user_id'])) {
             <a class="nav-link" href="#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="logout.php">Sign Out</a>
+            <a class="nav-link" href="index.php">Sign Out</a>
           </li>
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn primary" type="submit">Search</button>
+          <button class="btn btn-outline-light" type="submit">Search</button>
         </form>
       </div>
     </div>
   </nav>
 
+  <!-- Bootstrap JS (includes Popper.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  
     <!-- Home Section Start -->
     <div class="home" id="home">
       
         <div class="content">
 
           <video autoplay loop muted plays-inline class="back-video">
-            <source src="1.mp4" type="video/mp4">
+            <source src="2.mp4" type="video/mp4">
           </video>
             <h5>Welcome To <span>Horizon watchs</span></h5><Br><br>
             <h1>Buy <span class="changecontent"></span> watch</h1>
@@ -588,8 +611,14 @@ if (!isset($_SESSION['user_id'])) {
               Our journey began with a simple yet profound vision: to craft timepieces that transcend boundaries, inspire exploration,
                and accompany individuals on their unique odysseys through life. Rooted in the spirit of adventure, each Horizon watch embodies
                 the essence of discovery and wanderlust. </p>
-            <button id="about-btn">Read More...</button>
-          </div>
+                <button id="about-btn">Read More...</button>
+
+                <script>
+                        document.getElementById('about-btn').addEventListener('click', function() {
+                        window.location.href = 'ContactSection.php';
+                       });
+                </script>
+            </div>
 
         </div>
 
@@ -635,7 +664,7 @@ if (!isset($_SESSION['user_id'])) {
 
 
 <!-- Bootstrap JS and dependencies -->
-<script src="java.js"></script>
+<script src="home.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
