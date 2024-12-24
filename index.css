@@ -222,7 +222,7 @@ body{
 
 @media only screen and (max-width: 768px) {
     .container {
-      padding: 20px; /* Adjust as needed */
+      padding: 10px; /* Adjust as needed */
     }
   
     .container input {
@@ -231,3 +231,5 @@ body{
   
     /* Similar adjustments for other elements */
   }
+
+ 
