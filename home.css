@@ -37,6 +37,41 @@
     color: white;
     border: none;
 }
+
+@media (max-width: 480px) {
+    .navbar-nav .nav-item {
+      text-align: center; /* Center align text */
+      width: 100px; /* Full width for nav items */
+    }
+
+    .navbar-nav .nav-link {
+      display: block; /* Ensure the link spans the full width */
+      padding: 10px 0; /* Adjust padding for consistent spacing */
+      width: 100px; /* Make hover effect cover the full width */
+    }
+
+    .navbar-nav .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.1); /* Add hover background effect */
+      color: #fff; /* Ensure text remains visible */
+    }
+  }
+@media (max-width: 750px) {
+    .navbar-nav .nav-item {
+      text-align: center; /* Center align text */
+      width: 100px; /* Full width for nav items */
+    }
+
+    .navbar-nav .nav-link {
+      display: block; /* Ensure the link spans the full width */
+      padding: 10px 0; /* Adjust padding for consistent spacing */
+      width: 100px; /* Make hover effect cover the full width */
+    }
+
+    .navbar-nav .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.1); /* Add hover background effect */
+      color: #fff; /* Ensure text remains visible */
+    }
+  }
 /* Navbar End */
 
 
@@ -49,11 +84,14 @@
 
 /* Home Section Start */
 
-.back-video{
+.back-video {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+    top: 0; /* Ensures the video starts from the top */
+    left: 0; /* Ensures the video starts from the left */
+    width: 100%; /* Makes the video span the entire width */
+    height: 100%; /* Makes the video span the entire height */
+    object-fit: cover; /* Ensures the video scales to cover the area while maintaining its aspect ratio */
+    z-index: -1; /* Places the video behind other elements */
 }
 .home{
     width: 100%;
@@ -353,7 +391,7 @@
     height: 38px;
     border: none;
     border-radius: 5px;
-    background: #ffa500;
+    background: #000000;
     color: white;
     letter-spacing: 2px;
     font-weight: 550;
@@ -362,6 +400,8 @@
 }
 #about-btn:hover{
     width: 170px;
+    color: #000000;
+    background: #01b1f7;
 }
 @media (max-width:765px){
     .about{
@@ -435,7 +475,7 @@
     text-shadow: 0px 0px 1px black;
 }
 #footer h1 span{
-    color: #ffa500;
+    color: #0066ff;
 }
 .social-links i{
     padding: 10px;
@@ -449,7 +489,7 @@
     cursor: pointer;
 }
 .social-links i:hover{
-    background: #ffa500;
+    background: #0066ff;
 }
 /* Footer End */
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
