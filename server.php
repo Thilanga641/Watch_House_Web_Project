@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['action']) && $_POST['a
 
     if ($conn->query($query) === TRUE) {
         // Redirect to the sign-in page with a success flag
-        header("Location: Login_form.php?signup=success");
+        header("Location: index.php?signup=success");
         exit();
     } else {
         echo "Error: " . $query . "<br>" . $conn->error;
